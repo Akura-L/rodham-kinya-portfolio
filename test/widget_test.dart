@@ -14,6 +14,10 @@ void main() {
     await tester.pumpWidget(const PortfolioApp());
     await tester.pumpAndSettle();
 
+    final theme = Theme.of(tester.element(find.byType(Scaffold)));
+    expect(theme.scaffoldBackgroundColor, const Color(0xFFFAF7F2));
+    expect(theme.colorScheme.primary, const Color(0xFF70513D));
+
     expect(find.text('Rodham Kinya Karani').first, findsOneWidget);
     expect(
       find.text('United Nations Environment Programme (UNEP)'),

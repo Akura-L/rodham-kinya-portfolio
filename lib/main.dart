@@ -3,13 +3,13 @@ import 'dart:math' show min;
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-const _paper = Color(0xFFF5F5F0);
-const _ink = Color(0xFF202824);
-const _muted = Color(0xFF747A73);
-const _line = Color(0xFFD9DDD5);
-const _forest = Color(0xFF31594C);
-const _orange = Color(0xFFD55A39);
-const _sage = Color(0xFFE9EDE7);
+const _paper = Color(0xFFFAF7F2);
+const _ink = Color(0xFF342A23);
+const _muted = Color(0xFF77695D);
+const _line = Color(0xFFE2D8CC);
+const _forest = Color(0xFF70513D);
+const _orange = Color(0xFFAD7852);
+const _sage = Color(0xFFF0E8DD);
 
 void main() {
   runApp(const PortfolioApp());
@@ -34,7 +34,7 @@ class PortfolioApp extends StatelessWidget {
         ),
         textSelectionTheme: const TextSelectionThemeData(
           cursorColor: _forest,
-          selectionColor: Color(0x5531594C),
+          selectionColor: Color(0x5570513D),
           selectionHandleColor: _forest,
         ),
       ),
@@ -389,7 +389,7 @@ class _NavLink extends StatelessWidget {
       child: TextButton(
         onPressed: onTap,
         style: TextButton.styleFrom(
-          foregroundColor: emphasized ? _ink : const Color(0xFF59615B),
+          foregroundColor: emphasized ? _ink : const Color(0xFF67594D),
           padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
           textStyle: TextStyle(
             fontSize: 12,
@@ -474,7 +474,7 @@ class _HeroSection extends StatelessWidget {
                         child: Text(
                           'LLB graduate focused on legal support, research, and dependable administrative coordination.',
                           style: TextStyle(
-                            color: Color(0xFF656E67),
+                            color: Color(0xFF71655B),
                             height: 1.7,
                             fontSize: 15,
                           ),
@@ -587,10 +587,10 @@ class _HeroArtwork extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    Color(0x1631594C),
-                    Color(0x0031594C),
-                    Color(0x0031594C),
-                    Color(0xAA202824),
+                    Color(0x1670513D),
+                    Color(0x0070513D),
+                    Color(0x0070513D),
+                    Color(0xAA342A23),
                   ],
                   stops: [0, 0.25, 0.57, 1],
                 ),
@@ -634,7 +634,7 @@ class _HeroArtwork extends StatelessWidget {
                 'LEGAL RESEARCH\nADMINISTRATIVE SUPPORT',
                 textAlign: TextAlign.right,
                 style: TextStyle(
-                  color: _forest,
+                  color: _paper,
                   fontFamily: 'monospace',
                   height: 1.6,
                   fontSize: 9,
@@ -731,7 +731,7 @@ class _ProfileContent extends StatelessWidget {
         const Text(
           'LLB graduate with hands-on legal and administrative support experience at the High Court of Kenya, Kenyatta National Hospital, and the United Nations Environment Programme. Skilled in legal research, document drafting and proofreading, case file and calendar management, and professional stakeholder communication. Comfortable managing competing deadlines independently in fast-paced, remote, and in-person settings. Seeking a Legal Assistant or Virtual Assistant role.',
           style: TextStyle(
-            color: Color(0xFF677069),
+            color: Color(0xFF71655B),
             fontSize: 14,
             height: 1.85,
           ),
@@ -801,7 +801,7 @@ class _ExperienceContent extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(vertical: 24),
             decoration: const BoxDecoration(
-              border: Border(top: BorderSide(color: Color(0xFFCBD3CA))),
+              border: Border(top: BorderSide(color: Color(0xFFD9CBB9))),
             ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -861,7 +861,7 @@ class _ExperienceContent extends StatelessWidget {
                                 child: Text(
                                   highlight,
                                   style: const TextStyle(
-                                    color: Color(0xFF59645D),
+                                    color: Color(0xFF62554A),
                                     fontSize: 12,
                                     height: 1.75,
                                   ),
@@ -925,7 +925,7 @@ class _EducationContent extends StatelessWidget {
                     Text(
                       entry.institution,
                       style: const TextStyle(
-                        color: Color(0xFF69716B),
+                        color: Color(0xFF71655B),
                         fontSize: 12,
                       ),
                     ),
@@ -979,7 +979,7 @@ class _SkillsContent extends StatelessWidget {
         const SizedBox(height: 20),
         const Text(
           'Legal and administrative support, with the organization and discretion needed to keep busy teams moving.',
-          style: TextStyle(color: Color(0xFF677069), fontSize: 14, height: 1.8),
+          style: TextStyle(color: Color(0xFF71655B), fontSize: 14, height: 1.8),
         ),
         const SizedBox(height: 26),
         for (final group in groups)
@@ -989,7 +989,7 @@ class _SkillsContent extends StatelessWidget {
               return Container(
                 padding: const EdgeInsets.symmetric(vertical: 20),
                 decoration: const BoxDecoration(
-                  border: Border(top: BorderSide(color: Color(0xFFCBD3CA))),
+                  border: Border(top: BorderSide(color: Color(0xFFD9CBB9))),
                 ),
                 child: compact
                     ? Column(
@@ -1023,7 +1023,7 @@ class _SkillsContent extends StatelessWidget {
               );
             },
           ),
-        const Divider(color: Color(0xFFCBD3CA), height: 1),
+        const Divider(color: Color(0xFFD9CBB9), height: 1),
       ],
     );
   }
@@ -1060,11 +1060,11 @@ class _SkillChips extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(vertical: 9, horizontal: 12),
             decoration: BoxDecoration(
-              border: Border.all(color: const Color(0xFFCBD3CA)),
+              border: Border.all(color: const Color(0xFFD9CBB9)),
             ),
             child: Text(
               skill,
-              style: const TextStyle(color: Color(0xFF59645D), fontSize: 11),
+              style: const TextStyle(color: Color(0xFF62554A), fontSize: 11),
             ),
           ),
       ],
@@ -1101,7 +1101,7 @@ class _ContactSection extends StatelessWidget {
               const Text(
                 'For Legal Assistant and Virtual Assistant opportunities, reach out directly.',
                 style: TextStyle(
-                  color: Color(0xFF69716B),
+                  color: Color(0xFF71655B),
                   fontSize: 13,
                   height: 1.7,
                 ),
