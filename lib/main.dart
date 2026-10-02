@@ -71,6 +71,14 @@ class _PortfolioPageState extends State<PortfolioPage> {
 
   static const _experience = [
     _Experience(
+      role: 'Legal Advisor & Virtual Assistant',
+      organization: 'Devsync Africa',
+      context: 'February 2026 – Present',
+      highlights: [
+        'Serving as the company’s legal advisor and virtual assistant.',
+      ],
+    ),
+    _Experience(
       role: 'Legal Intern',
       organization: 'United Nations Environment Programme (UNEP)',
       context: 'International internship',
@@ -472,7 +480,7 @@ class _HeroSection extends StatelessWidget {
                       ConstrainedBox(
                         constraints: const BoxConstraints(maxWidth: 360),
                         child: Text(
-                          'LLB graduate focused on legal support, research, and dependable administrative coordination.',
+                          'Lawyer focused on legal support, research, and dependable administrative coordination.',
                           style: TextStyle(
                             color: Color(0xFF71655B),
                             height: 1.7,
@@ -729,7 +737,7 @@ class _ProfileContent extends StatelessWidget {
         ),
         const SizedBox(height: 25),
         const Text(
-          'LLB graduate with hands-on legal and administrative support experience at the High Court of Kenya, Kenyatta National Hospital, and the United Nations Environment Programme. Skilled in legal research, document drafting and proofreading, case file and calendar management, and professional stakeholder communication. Comfortable managing competing deadlines independently in fast-paced, remote, and in-person settings. Seeking a Legal Assistant or Virtual Assistant role.',
+          'Lawyer currently serving as Legal Advisor and Virtual Assistant at Devsync Africa since February 2026, with hands-on legal and administrative support experience at the High Court of Kenya, Kenyatta National Hospital, and the United Nations Environment Programme. Skilled in legal research, document drafting and proofreading, case file and calendar management, and professional stakeholder communication. Comfortable managing competing deadlines independently in fast-paced, remote, and in-person settings. Seeking a Legal Assistant or Virtual Assistant role.',
           style: TextStyle(
             color: Color(0xFF71655B),
             fontSize: 14,

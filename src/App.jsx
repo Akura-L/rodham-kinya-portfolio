@@ -11,6 +11,14 @@ const sections = [
 
 const experience = [
   {
+    role: 'Legal Advisor & Virtual Assistant',
+    organization: 'Devsync Africa',
+    context: 'February 2026 – Present',
+    highlights: [
+      'Serving as the company’s legal advisor and virtual assistant.',
+    ],
+  },
+  {
     role: 'Legal Intern',
     organization: 'United Nations Environment Programme (UNEP)',
     context: 'International internship',
@@ -104,7 +112,7 @@ function App() {
             <div className="hero-copy">
               <p className="overline">Professional portfolio</p>
               <h1 id="hero-title">Rodham<br />Kinya<br /><span>Karani</span><i>.</i></h1>
-              <p className="hero-description">LLB graduate focused on legal support, research, and dependable administrative coordination.</p>
+              <p className="hero-description">Lawyer focused on legal support, research, and dependable administrative coordination.</p>
               <a className="text-link" href="#profile">
                 Explore portfolio <ArrowDown size={16} aria-hidden="true" />
               </a>
@@ -131,7 +139,7 @@ function App() {
             </div>
             <div className="section-main">
               <h2 id="profile-title">Law, handled<br /><em>with care.</em></h2>
-              <p className="section-intro">LLB graduate with hands-on legal and administrative support experience at the High Court of Kenya, Kenyatta National Hospital, and the United Nations Environment Programme. Skilled in legal research, document drafting and proofreading, case file and calendar management, and professional stakeholder communication. Comfortable managing competing deadlines independently in fast-paced, remote, and in-person settings. Seeking a Legal Assistant or Virtual Assistant role.</p>
+              <p className="section-intro">Lawyer currently serving as Legal Advisor and Virtual Assistant at Devsync Africa since February 2026, with hands-on legal and administrative support experience at the High Court of Kenya, Kenyatta National Hospital, and the United Nations Environment Programme. Skilled in legal research, document drafting and proofreading, case file and calendar management, and professional stakeholder communication. Comfortable managing competing deadlines independently in fast-paced, remote, and in-person settings. Seeking a Legal Assistant or Virtual Assistant role.</p>
               <div className="profile-facts">
                 <div><span>Location</span><strong>Nairobi, Kenya</strong></div>
                 <div><span>Focus</span><strong>Legal &amp; virtual assistance</strong></div>
