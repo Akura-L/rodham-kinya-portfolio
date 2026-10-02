@@ -1,5 +1,6 @@
 import { ArrowDown, ArrowUpRight, BriefcaseBusiness, GraduationCap, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
 import { useState } from 'react';
+import portrait from '../assets/rodham-karani-portrait.jpeg';
 
 const sections = [
   { id: 'profile', label: 'Profile' },
@@ -108,14 +109,13 @@ function App() {
                 Explore portfolio <ArrowDown size={16} aria-hidden="true" />
               </a>
             </div>
-            <div className="hero-art" aria-hidden="true">
-              <div className="art-grid" />
-              <div className="art-ring art-ring-one" />
-              <div className="art-ring art-ring-two" />
-              <span className="art-label">RK / 01</span>
-              <span className="art-cross">+</span>
-              <span className="art-note">Legal research<br />Administrative support</span>
-            </div>
+            <img
+              className="hero-art"
+              src={portrait}
+              alt="Portrait of Rodham Kinya Karani"
+              width={830}
+              height={768}
+            />
           </div>
           <div className="hero-footer">
             <span>Legal support · Nairobi, Kenya</span>
